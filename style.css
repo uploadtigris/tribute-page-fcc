@@ -1,0 +1,155 @@
+/* STYLES 
+
+COLORS:
+#9AACA9
+#BEC5C5
+#C9CFCF
+#D4D9D9
+
+
+TINTS:
+LINE SPACING:
+25px / 16px
+
+~FONT SIZES:
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+
+
+
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+html {
+    /* this will make 1rem = 10px; */
+    font-size: 10px;
+}
+
+body {
+    font-family: "Rubik", sans-serif;
+    line-height: 1;
+    font-weight: 400;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+/* OUTERMOST */
+.main-container{
+    margin: 0 auto;
+    width: 85%;
+    background-color: #D4D9D9;
+}
+
+/* MAIN PAGE */
+#main {
+    background-color: #C9CFCF;
+    border-radius: 9px;
+
+    /* top right bottom left */
+    padding: 2.5rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+/* FRAMING THE PICTURE */
+#img-div {
+    background-color: #BEC5C5;
+    padding: 2rem;
+    border-radius: 9px;
+}
+
+#title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.section-hero {
+    margin-bottom: 2.5rem;
+}
+
+#title {
+    font-size: 6.2rem;
+    
+}
+
+.sub-heading {
+    margin-bottom: 2.5rem;
+    font-size: 2rem;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    margin-top: 2rem;
+    margin: 0 auto;
+    border-radius: 9px;
+}
+
+#img-caption {
+    margin-top: 1.6rem;
+    font-size: 1.6rem;
+}
+
+#tribute-info {
+    padding: 2rem;
+    box-shadow: 0 0 3rem .01px rgba(0, 0, 0, 0.02);
+    border-radius: 9px;
+}
+
+#headline {
+    font-size: 2.4rem;
+    margin-bottom: 4rem;
+}
+
+ul {
+    max-width: 550px;
+    text-align: left;
+    margin: 0 auto 50px auto;
+    font-size: 2.4;
+}
+
+li {
+    margin: 16px 0;
+  }
+
+.timeline-items {
+    font-size: 2.4;
+}
+
+.closing-sentences {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 2rem;
+}
+
+#tribute-link {
+    text-decoration: none;
+    color: #333;
+}
+
+#second-tribute-link {
+    text-decoration: none;
+    color: #333;
+}
+
+#tribute-link:hover,
+#tribute-link:active {
+    color:white;
+    border-top: 1px solid rgba(0, 0, 0, 0.40);
+    ;
+}
+
+#second-tribute-link:hover,
+#second-tribute-link:active {
+    color:white;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.50);
+
+}
