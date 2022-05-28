@@ -1,66 +1,69 @@
-<!DOCTYPE html>
-<html lang="en">
+#navbar {
+    position: fixed;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:300px;
+    border-right: solid;
+}
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tribute Page</title>
+nav {
+    display: block;
+}
 
-    <!-- YOU NEED THIS TO LINK THE SHEETS TOGETHER -->
-    <link rel="stylesheet" href="styles.css" />
+header {
+    color: black;
+    margin: 10px;
+    text-align: center;
+    font-size: 1.8em;
+}
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+a {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
 
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-</head>
+#navbar a {
+    color: #4d4e53;
+    border-top: 1px solid;
+    list-style: none;
+    position: relative;
+}
 
-<body class="main-container">
-    <main id="main">
-        <section class="section-hero">
-            <div class="heading">
-                <h1 id="title"><ion-icon name="logo-electron"></ion-icon><span>Nikola Tesla</span><ion-icon name="logo-electron"></ion-icon></h1>
-                <p class="sub-heading">A man before his time</p>
-            </div>
-            
-            <figure id="img-div">
-                <img id="image" src="https://wallpapercave.com/wp/wp1936505.jpg" alt="a portrait of Nikola Tesla"/>
-                <figcaption id="img-caption">
-                    Nikola Tesla, known as a brilliant Innovator and Engineer.
-                </figcaption>
-            </figure>
-        </section>
-        <section id="tribute-info">
-            <h3 id="headline">A timeline of Nikola Tesla's Life</h3>
-                <ul class="timeline-items">
-                    <li><strong>1859</strong> - Nikola Tesla is Born in Smiljan, Coatia</li>
-                    <li><strong>1870</strong> - Tesla contracts cholera and nearly faces death</li>
-                    <li><strong>1875</strong> - Tesla Enrolls in College on a military scholarship. Proceeds to be an excellent student, even receiving a letter of commendation from the dean of the Technical Department. </li>
-                    <li><strong>1880</strong> - Moves to Prague to Study Philosophy.</li>
-                    <li><strong>1889</strong> - Began His Career As Chieft Electrical Engineer.</li>
-                    <li><strong>1882</strong> - Tesla begins to work for Thomas Edison.</li>
-                    <li><strong>1885</strong> - Tesla Submits Some Of His First Patents</li>
-                    <li><strong>1887</strong> - Re-imagines The Electric Motor</li>
-                    <li><strong>1890</strong> - Tesla Begins His Work On Wirless Power Transmission</li>
-                    <li><strong>1891</strong> - Tesla Patents The Tesla Coil</li>
-                    <li><strong>1943</strong> - Tesla Passes</li>
-                </ul>
+#main-doc {
+    position: absolute;
+    margin-left: 310px;
+    padding: 20px;
+    margin-bottom: 110px;
+}
 
-            <div class="closing-sentences">
-                <div>
-                    <p>If you would like to know more, please click on the following <a id="tribute-link" href=https://en.wikipedia.org/wiki/Nikola_Tesla" target="_blank"> Wikipedia entry </a> </p>
-                </div>
-                <div>
-                    <p>To find more info about the items on the timeline, please visit <a id="second-tribute-link" href="https://transportationevolved.com/nikola-tesla/" target="_blank"> this page. </a></p>
-                </div>
-            </div>
-        </section>
-        <footer class="section-footer"></footer>
-    </main>
-</body>
+main {
+    display: block;
+}
 
-</html>
+@media (max-width:860px){
+    #navbar {
+        width: 200px;
+    }
+    #main-doc {
+        margin-left: 200px;
+    }
+}
+
+@media (max-width: 544px) {
+    #navbar {
+        width: 100px;
+    }
+    #main-doc {
+        margin-left: 100px;
+    }
+
+    a {
+        padding-inline-start: 10px;
+    }
+}
